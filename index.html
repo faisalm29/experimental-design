@@ -5,59 +5,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Eczar:wght@500;700&family=Fira+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="output.css" />
 
     <title>Design Experiment</title>
   </head>
-  <body id="home">
-    <nav>
-      <div class="flex-container">
-        <a href="/" class="logo">Logo</a>
-        <button class="hamburger-button">
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-          <span class="hamburger-line"></span>
-        </button>
-      </div>
-
-      <div class="mobile-menu hidden">
-        <ul class="unordered-lists">
-          <li class="list">
-            <a href="/">Home</a>
-          </li>
-          <li class="list">
-            <a href="/">Blog</a>
-          </li>
-          <li class="list">
-            <a href="/">Contact</a>
-          </li>
-          <li class="list">
-            <a href="/">About</a>
-          </li>
-        </ul>
-
-        <div class="close-btn-container">
-          <button class="close-btn">&#215;</button>
+  <body class="bg-[#F7F7F7]">
+    <nav class="py-8 sticky w-[1006px] mx-auto">
+      <div class="flex justify-between items-center">
+        <a href="/">
+          <img src="images/logo.svg" alt="logo" class="w-[42px] h-[42px]" />
+        </a>
+        <div>
+          <a class="mr-6 font-heading" href="/">Movies</a>
+          <a class="mr-6 font-heading" href="/">About</a>
+          <button
+            class="w-[42px] h-[42px] bg-[#EBEBEB] rounded-lg shadow-inner"
+          >
+            <div class="flex justify-center items-center">
+              <svg
+                width="24"
+                height="24"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6 13C4.33333 13 1 14 1 18C1 22 4.33333 23 6 23H18C19.6667 23 23 22 23 18C23 14 19.6667 13 18 13"
+                  stroke="#FFD369"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z"
+                  stroke="#FFD369"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M19 9L20 9"
+                  stroke="#FFD369"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 2V1"
+                  stroke="#FFD369"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M18.5 3.5L17.5 4.5"
+                  stroke="#FFD369"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M5.5 3.5L6.5 4.5"
+                  stroke="#FFD369"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M4 9L5 9"
+                  stroke="#FFD369"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </button>
         </div>
       </div>
-
-      
     </nav>
-    <h1 class="heading-text">Hello, World!</h1>
-    <p class="body-text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quo
-      voluptatum, repellat illum asperiores corporis perferendis dolor animi
-      temporibus. Exercitationem illo totam impedit eius, nobis mollitia
-      doloribus corrupti nostrum, facilis voluptatem magnam placeat similique
-      ad? Voluptas vitae rem architecto deserunt aliquid porro pariatur! Illum
-      recusandae perferendis nam animi illo at, deserunt doloribus ad nobis,
-      voluptatum corrupti mollitia? Temporibus, ad! Possimus!
-    </p>
-    <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio nisi dolore dolorum beatae qui nostrum non itaque deleniti, explicabo quaerat eligendi consequatur earum debitis, numquam laboriosam, quae sint mollitia culpa reprehenderit? Autem!</p>
 
-    <div class="arrow-container">
-      <a href="#home" class="arrow">&#8593</a>
+    <div
+      class="py-[40px] flex flex-row-reverse justify-center gap-[104px] relative items-start"
+    >
+      <nav class="w-[336px] sticky top-0 hidden">
+        <div class="mt-[100px] flex flex-col">
+          <p class="font-heading">Daftar Isi</p>
+          <a class="font-body">Introduction</a>
+          <a class="font-body">Expressions</a>
+          <a>Statements</a>
+          <a class="font-body pl-4">A Handy Trick</a>
+          <a class="font-body">Expressions as Statements</a>
+          <a class="font-body">Practical Implications in React</a>
+          <a class="font-body">In Summary</a>
+        </div>
+      </nav>
+
+      <article class="w-[566px]">
+        <h1 class="text-[68px] font-bold font-heading">
+          Ini Adalah Sebuah Heading 1
+        </h1>
+        <p class="font-body mb-4 text-lg">
+          Lintang Citra masih terkagum-kagum. Dia masih mencoba menjelaskan
+          perasaannya setelah bermain dengan aplikasi bertenaga AI yang saya
+          beri tahu beberapa hari sebelumnya. Saya menemukannya tidak sengaja,
+          hasil kegiatan iseng yang selalu saya lakukan setiap susah tidur atau
+          bosan: buka Google dan lempar pertanyaan acak yang terlintas di
+          kepala.
+        </p>
+        <p class="font-body leading-6 mb-4">
+          Vivamus ut libero est. Curabitur efficitur magna viverra neque
+          volutpat semper. Aliquam erat volutpat. Morbi congue urna ut congue
+          commodo. Integer at nisl gravida, malesuada magna in, sagittis tortor.
+          In rhoncus volutpat odio. Vestibulum in aliquam nunc. Sed vehicula,
+          nisl a viverra convallis, leo magna suscipit lectus, eget lobortis
+          risus ipsum quis velit. Mauris erat eros, posuere eu volutpat nec,
+          fringilla eget nulla.
+        </p>
+        <p class="leading-6 font-body mb-4">
+          Pellentesque habitant morbi tristique senectus et netus et malesuada
+          fames ac turpis egestas. Quisque pharetra ligula at rutrum efficitur.
+          Cras luctus massa sed ipsum condimentum, ut venenatis mi volutpat.
+          Morbi at urna fermentum, tristique arcu ac, rhoncus orci. Fusce
+          gravida malesuada orci, nec iaculis nunc sollicitudin eu. Nulla eget
+          convallis erat. Donec interdum magna ut arcu imperdiet scelerisque.
+          Praesent ac massa iaculis, molestie diam vitae, venenatis enim. Nam
+          porta ultrices mi vitae ornare. Suspendisse efficitur commodo ante, ac
+          dapibus ligula pulvinar quis. Sed convallis euismod ante, nec
+          scelerisque nulla dignissim at. Pellentesque in velit arcu.
+        </p>
+        <p class="leading-6 font-body mb-4">
+          Aenean tincidunt metus sapien, in sodales ante malesuada imperdiet.
+          Curabitur bibendum lacus sit amet maximus ultrices. Nullam eget est
+          tempus, elementum quam ut, dignissim tortor. Vestibulum et ex cursus,
+          viverra nunc et, tincidunt sem. Maecenas eget arcu ante. Ut eu
+          tincidunt erat. Maecenas mauris eros, sollicitudin non eleifend sit
+          amet, dignissim vitae orci. Etiam eget dui eu purus mollis aliquet.
+          Proin rutrum turpis id nisi iaculis feugiat. In blandit id dui sit
+          amet finibus. Donec non magna nec libero cursus fringilla non id quam.
+          Aenean eu laoreet urna, a interdum risus. Fusce viverra ipsum nibh, ac
+          dignissim risus ullamcorper vitae. Pellentesque et mauris ut tortor
+          luctus ullamcorper id vel lectus. Cras laoreet sed odio sed ornare.
+        </p>
+        <p class="leading-6 font-body mb-4">
+          Phasellus et augue ac felis sagittis ornare. Vestibulum ante ipsum
+          primis in faucibus orci luctus et ultrices posuere cubilia curae; Duis
+          vulputate quis justo eu auctor. In tortor orci, hendrerit vitae
+          pretium nec, accumsan vitae enim. Donec vitae felis magna. Nam et
+          purus nec risus sodales molestie a eget magna. Integer a augue in sem
+          iaculis imperdiet sed a metus. Ut lacus leo, condimentum nec hendrerit
+          pharetra, consequat nec erat. Integer imperdiet vulputate orci. Donec
+          justo velit, efficitur ac vehicula quis, malesuada sed lacus.
+        </p>
+      </article>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
